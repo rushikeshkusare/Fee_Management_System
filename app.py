@@ -6,22 +6,11 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from database_setup import setup
 
-import sys
-import pathlib
-
-# Fix for click issue with cx_Freeze
-if sys.platform == "darwin":
-    import click
-    click.core._verify_python3_env = lambda: None
-
-# Convert PosixPath to string if needed
-pathlib.PosixPath.__str__ = lambda self: self.as_posix()
-
 
 setup()
 # Email Configuration
-EMAIL_ADDRESS = "rushikeshkkusare29@gmail.com"
-EMAIL_PASSWORD = "Rushi.kusare123"
+EMAIL_ADDRESS = "teast@mail.com"
+EMAIL_PASSWORD = "user@123"
 
 # Function to Connect to Database
 def connect_db():
