@@ -145,6 +145,10 @@ with tab1:
             sec_contact = st.text_input("Secondary Contact Number (Optional)")
         with col3:
             sec_email = st.text_input("Secondary Email (Optional)")
+    else:
+        sec_guardian=None
+        sec_contact=None
+        sec_email=None
 
     col1, col2 = st.columns([0.7, 0.3])
     with col1:
